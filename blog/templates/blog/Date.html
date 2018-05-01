@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    {% load static %}
+	<script src="{% static 'blog/wow.min.js' %}"></script>
+	<script>
+	new WOW().init();
+	</script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/stylet.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/animate.css' %}">
+
+	<meta charset="utf-8"/>
+</head>
+<body>
+<div class="masterhead">
+
+
+    </div>
+
+    <div class="header">
+        <nav class="menu">
+            <a href="teste.html">Qui sommes -nous</a>
+
+            <a href="teste.html">Nos réalisations</a>
+
+			<a href="teste.html">Services</a>
+
+			<a href="teste.html">Contact</a>
+        </nav>
+
+
+    </div>
+
+    <div class="flat">
+
+
+    </div>
+
+
+    <div class="container">
+        Bienvenue sur le site de [TBD].<p> Nos collaborateurs
+		proposent des services axés sur la purification<p> de l'eau à l'aide de
+		nouvelles technologies aliant efficacité et respect de l'environnement.
+        {% load static %}
+		<h1 class="wow bounceInRight">Mon élément HTML animé</h1>
+		<h1 class="wow bounceInRight" data-wow-iteration="1"><img src="{% static 'blog/eauHeader.jpg' %}" height="200" class="wow"></h1>
+		<marquee align="center" height="100" scrolldelay="5" scrollamount="3" onmouseout="this.start()" onmouseover="this.stop()">
+<p><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0"><img border="0" src="{% static 'blog/eauHeader.jpg' %}" alt="" hspace="0">
+</p></marquee>
+    </div>
+
+
+    <div class="separator"></div>
+    <footer class="footer">
+        <h1>Copyright</h1>
+    </footer>
+</body>
+</html>

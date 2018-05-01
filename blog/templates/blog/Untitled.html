@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Big Business 2.0
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120624
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>Water Progress</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'blog/jquery.dropotron-1.0.js' %}"></script>
+<script type="text/javascript" src="{% static 'blog/jquery.slidertron-1.1.js' %}"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#menu > ul').dropotron({
+			mode: 'fade',
+			globalOffsetY: 11,
+			offsetY: -15
+		});
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			indicatorSelector: '.indicator span',
+			reelSelector: '.reel',
+			slidesSelector: '.slide',
+			speed: 'slow',
+			advanceDelay: 4000
+		});
+	});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Water Progress</a></h1>
+		</div>
+		<div id="slogan">
+			<h2>For better life ...</h2>
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first">
+				<span class="opener">Accueil<b></b></span>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Consequat Dolor</a></li>
+					<li><a href="#">Magna Feugiat</a></li>
+					<li>
+						<span>Sed Tempus<b></b></span>
+						<ul>
+							<li><a href="#">Lorem Ipsum</a></li>
+							<li><a href="#">Consequat Dolor</a></li>
+							<li><a href="#">Magna Feugiat</a></li>
+							<li><a href="#">Sed Tempus</a></li>
+							<li><a href="#">Etiam Nullam</a></li>
+							<li><a href="#">Amet Phasellus</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Etiam Nullam</a></li>
+					<li><a href="#">Amet Phasellus</a></li>
+				</ul>
+			</li>
+			<li><a href="{% url 'call_principe' %}">Principe</a></li>
+			<li><a href="{% url 'call_services' %}">Services</a></li>
+			<li><a href="{% url 'call_clients' %}">Clients</a></li>
+			<li>
+				<span class="opener">Produits<b></b></span>
+				<ul>
+					<li><a href="#">Clarificateur</a></li>
+					<li><a href="#">Solution connectée</a></li>
+					<li><a href="#">Contrôleur</a></li>
+				</ul>
+			</li>
+			<li><a href="{% url 'call_plateforme' %}">Plate-forme</a></li>
+			<li class="last"><a href="#">A propos</a></li>
+		</ul>
+		<br class="clearfix" />
+	</div>
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide">
+					{% load static %}
+					<img src="{% static 'blog/slide01.jpg' %}" alt="" />
+				</div>
+				<div class="slide">
+					<img src="{% static 'blog/slide02.jpg' %}" alt="" />
+				</div>
+				<div class="slide">
+					<img src="{% static 'blog/slide03.jpg' %}" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="indicator">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+			<br class="box">
+				<h2>Bienvenue chez Water Progress</h2>
+
+					Waterprogress propose des <a href="{% url 'call_services' %}" rel="nofollow">services</a> axés sur le bon fonctionnement d'un milieu aquatique.
+					<br>Les solutions développées sont en accord avec 2 valeurs suivies par notre société:</br>
+
+					<UL style="list-style-type:disc;" id="puce">
+						<img class="object-right" src="{% static 'blog/ecology.jpg' %}" width="130" height="130" alt="" title=""/>
+
+						<LI><strong>respect de l'environnement.</strong></LI>
+						<LI><strong>performance tant énergétique que technologique.</strong></LI>
+					</UL>
+				<h3>Champ d'application</h3>
+					<p>
+						<img class="object-right" src="{% static 'blog/fieldApplication.png' %}" style="margin: -35px 0px" width="110" height="110" alt="" title=""/>
+
+						Le système élaboré fonctionne aussi bien pour les étangs que pour les piscines.
+					</p>
+				<h3>Produits</h3>
+					Water progress offre toute une gamme de produits connexes à:
+					<UL style="list-style-type:disc;" id="puce">
+						<img class="object-right" src="{% static 'blog/idéePicto.png' %}" style="margin: 5px -20px" width="110" height="118" alt="" title=""/>
+
+						<LI>la clarification et purification de l'eau sur base de nouvelle technologie.
+						<br><strong>Fini l'utilisation des lampes mercures traditionnelles ultra énergivores et polluantes!</strong></br>
+						<LI>un système de capteurs assurant le contrôle en continu de votre milieu aquatique.
+						<br><strong>Même à l'étranger, vous pouvez continuer à surveiller votre plan d'eau sans tracas</strong></br>
+					</UL>
+				</p>
+
+
+			</div>
+
+			<br class="clearfix" />
+		</div>
+
+		<br class="clearfix" />
+	</div>
+
+</div>
+<div id="footer">
+	&copy; WaterProgress. All rights reserved.
+</div>
+</body>
+</html>
